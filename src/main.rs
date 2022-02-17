@@ -9,12 +9,10 @@ fn main() {
 fn code_main() -> i32 {
     use std::env::args;
 
+
     let english = args().skip(1).collect::<Vec<String>>();
-    if !english.is_empty() {
-        println!("{}", uwu::translate(english.join(" ")));
-        0
-    }
-    else {
-        1
-    }
+    if english.is_empty() { return 1; }
+
+    println!("{}", uwu::translate(english.join(" ")));
+    0
 }

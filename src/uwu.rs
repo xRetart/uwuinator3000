@@ -1,7 +1,7 @@
 use std::borrow::Cow;
 
 // actual tranlation lookup table
-const DICTIONARY: [(char, &'static str); 3] = [
+const DICTIONARY: [(char, &str); 3] = [
     // FORM
     // (<old>, <new>),
     ('l', "w"), 
