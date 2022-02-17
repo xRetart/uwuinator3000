@@ -11,7 +11,7 @@ fn code_main() -> i32 {
 
     let english = args().skip(1).collect::<Vec<String>>();
     if !english.is_empty() {
-        println!("{}", uwu::translate(&english.join(" ")));
+        println!("{}", uwu::translate(english.join(" ")));
         0
     }
     else {
